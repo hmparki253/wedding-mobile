@@ -1,0 +1,22 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/constants/sizes';
+
+.pageContainer {
+  max-width: sizes.$MAX_WIDTH;
+  min-height: calc(100vh - sizes.$GNB_HEIGHT_M);
+  padding-top: sizes.$GNB_HEIGHT_M;
+  padding-bottom: env(safe-area-inset-bottom);
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 20px;
+
+  h2 {
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: colors.$PRIMARY;
+    text-align: center;
+  }
+}
