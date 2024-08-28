@@ -1,0 +1,69 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/constants/sizes';
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  max-width: sizes.$MAX_WIDTH;
+  overflow: hidden;
+
+  .images {
+    display: flex;
+    width: fit-content;
+    height: 300px;
+    overflow: auto;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100vw;
+      max-width: sizes.$MAX_WIDTH;
+    }
+
+    &.padding > img {
+      padding: 0 5px;
+    }
+  }
+}
+
+.indicators {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  &.inner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &.outer {
+    margin-top: 12px;
+
+    & > div {
+      background-color: colors.$GRAYD;
+    }
+  }
+
+  & > div {
+    width: 6px;
+    height: 6px;
+    background-color: colors.$WHITE;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: 0.3s ease;
+
+    &.active {
+      background-color: colors.$PRIMARY;
+      opacity: 1;
+    }
+  }
+}
