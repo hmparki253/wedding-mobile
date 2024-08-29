@@ -28,7 +28,7 @@ const ImageCarousel = ({
   currentIndex,
   setCurrentIndex,
   intervalTime = 5000,
-  delay = 500,
+  delay = 4000,
   threshold = 0.25,
   hasIndicator = true,
   indicatorPosition = 'inner',

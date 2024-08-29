@@ -9,7 +9,24 @@ import image02 from 'assets/images/IMG_2.jpg'
 import image03 from 'assets/images/IMG_3.jpg'
 import image04 from 'assets/images/IMG_4.jpg'
 
-const imageList = [image01, image02, image03, image04]
+const imageList = [
+  image01,
+  image02,
+  image03,
+  image04,
+  image01,
+  image02,
+  image03,
+  image04,
+  image01,
+  image02,
+  image03,
+  image04,
+  image01,
+  image02,
+  image03,
+  image04,
+]
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
