@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Map, MapMarker } from 'react-kakao-maps-sdk'
 import styles from './location.module.scss'
-
 import ImageCarousel from 'components/ImageCarousel'
 import image1 from 'assets/images/baily_hall.jpg'
 import image2 from 'assets/images/lobby.jpeg'
@@ -41,13 +40,13 @@ const Location = () => {
       />
       <h2>찾아오시는 길</h2>
       <Map
-        center={{ lat: 37.536821, lng: 126.975458 }} // 지도의 중심 좌표
+        center={{ lat: 37.5058, lng: 126.8874 }} // 지도의 중심 좌표
         style={{ width: '100%', height: '320px', marginTop: '1rem' }} // 지도 크기
         level={3} // 지도 확대 레벨
       >
-        <MapMarker position={{ lat: 37.536821, lng: 126.975458 }} />
+        <MapMarker position={{ lat: 37.5058, lng: 126.8874 }} />
       </Map>
-      <h3 className={styles.location}>로얄파크컨벤션</h3>
+      <h3 className={styles.location}>더링크호텔</h3>
       <div className={styles.address}>
         {addressText.map((text) => (
           <div key={text.title} className={styles.addressItem}>
@@ -56,11 +55,11 @@ const Location = () => {
           </div>
         ))}
         <div className={styles.mapIcons}>
-          <a href='https://map.naver.com/p/entry/place/1915861607?c=15.00,0,0,0,dh' target='_blank' rel='noreferrer'>
+          <a href='https://map.naver.com/p/entry/place/1070501110?c=15.00,0,0,0,dh' target='_blank' rel='noreferrer'>
             <img src={naverIcon} alt='네이버 지도' />
           </a>
           <a
-            href='https://map.kakao.com/?urlX=494581&urlY=1121521&urlLevel=3&itemId=1505842477&q=%EB%A1%9C%EC%96%84%ED%8C%8C%ED%81%AC%EC%9B%A8%EB%94%A9&srcid=1505842477&map_type=TYPE_MAP'
+            href='https://map.kakao.com/?map_type=TYPE_MAP&itemId=801090941&urlLevel=3&urlX=474352&urlY=1112805&q=%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94'
             target='_blank'
             rel='noreferrer'
           >

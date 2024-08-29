@@ -1,0 +1,47 @@
+@use '/src/styles/constants/colors';
+
+.section {
+  padding: 14px 35px 35px;
+  background-color: colors.$SECONDARY;
+
+  .date {
+    font-family: 'Hi Melody';
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    text-align: center;
+  }
+
+  .calendar {
+    padding: 20px 0;
+    color: colors.$GRAY1;
+    text-align: center;
+    background-color: colors.$WHITE;
+  }
+
+  .month {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .dayOfWeek {
+    color: colors.$GRAY3;
+  }
+
+  table {
+    margin: 0 auto;
+  }
+
+  tr > * {
+    padding: 10px;
+  }
+
+  .dday {
+    font-weight: 700;
+    color: colors.$WHITE;
+    background-color: colors.$PRIMARY;
+    border-radius: 50%;
+  }
+}

@@ -2,13 +2,14 @@
 
 .section {
   padding: 14px 35px 35px;
-  background-color: colors.$SECONDARY;
+  background-color: #f4f4f4;
 
   .date {
-    margin-bottom: 16px;
-    font-size: 18px;
+    font-family: 'Hi Melody';
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: 700;
-    color: colors.$GRAY1;
+    color: colors.$GRAY5;
     text-align: center;
   }
 
@@ -40,7 +41,7 @@
   .dday {
     font-weight: 700;
     color: colors.$WHITE;
-    background-color: colors.$PRIMARY;
+    background-color: #ffa6a6;
     border-radius: 50%;
   }
 }
