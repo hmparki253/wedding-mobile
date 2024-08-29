@@ -14,7 +14,6 @@ const Home = () => {
 
   return (
     <>
-      <Confetti numberOfPieces={150} opacity={0.5} colors={['#FFC0CB', '#FF69B4']} gravity={0.03} />
       <div className={styles.mainImage} />
       <div className={styles.bottomSheet}>
         <div className={styles.fadeIn} style={{ animationDelay: '100ms' }}>

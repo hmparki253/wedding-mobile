@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import Confetti from 'react-confetti'
 import { trackMenuClick } from 'hooks/useGTM'
 import Button from 'components/Button'
 import styles from './home.module.scss'
@@ -14,7 +13,6 @@ const Home = () => {
 
   return (
     <>
-      <Confetti numberOfPieces={150} opacity={0.5} colors={['#FFC0CB', '#FF69B4']} gravity={0.03} />
       <div className={styles.mainImage} />
       <div className={styles.bottomSheet}>
         <div className={styles.fadeIn} style={{ animationDelay: '100ms' }}>

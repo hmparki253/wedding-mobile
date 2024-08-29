@@ -16,8 +16,7 @@ const addressText = [
   },
   {
     title: '오시는 길',
-    description:
-      '1,2호선 신도림역 1번 출구에서 도보 10분 \n1호선 구로역 3번 출구 도보 5분 \n (셔틀버스: 1,2호선 신도림역 1번출구 맞은편)',
+    description: '신도림역 5번 출구 \n구로역 3번 출구 (1호선)',
   },
   {
     title: '주차 안내',
@@ -45,9 +44,7 @@ const Location = () => {
         style={{ width: '100%', height: '320px', marginTop: '1rem' }} // 지도 크기
         level={3} // 지도 확대 레벨
       >
-        <MapMarker position={{ lat: 37.50545604606263, lng: 126.8839587981552 }}>
-          <div style={{ color: '#000' }}>더링크 호텔</div>
-        </MapMarker>
+        <MapMarker position={{ lat: 37.50545604606263, lng: 126.8839587981552 }} />
       </Map>
       <h3 className={styles.location}>더링크호텔</h3>
       <div className={styles.address}>
