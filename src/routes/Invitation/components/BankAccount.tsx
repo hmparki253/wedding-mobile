@@ -28,6 +28,12 @@ const accounts: Record<keyof typeof side, Account[]> = {
       bank: '우리은행',
       account: '1002-943-177128',
     },
+    {
+      person: '아버지',
+      name: '최면석',
+      bank: '농협',
+      account: '011-02-338404',
+    },
   ],
   bride: [
     {

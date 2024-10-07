@@ -25,41 +25,34 @@ const accounts: Record<keyof typeof side, Account[]> = {
     {
       person: '신랑',
       name: '최정회',
-      bank: '카카오뱅크',
-      account: '0000-00-0000000',
+      bank: '우리은행',
+      account: '1002-943-177128',
     },
     {
       person: '아버지',
-      name: '최정회',
-      bank: '신한은행',
-      account: '000-000-000000',
-    },
-
-    {
-      person: '어머니',
-      name: '김관희',
-      bank: '신한은행',
-      account: '000-000-000000',
+      name: '최면석',
+      bank: '농협',
+      account: '011-02-338404',
     },
   ],
   bride: [
     {
       person: '신부',
       name: '채은솔',
-      bank: '우리은행',
-      account: '0000-000-000000',
+      bank: '카카오뱅크',
+      account: '3333-19-6862220',
     },
     {
       person: '아버지',
       name: '채규칠',
-      bank: 'SC제일은행',
-      account: '000-00-000000',
+      bank: '국민은행',
+      account: '023-21-0196-022',
     },
     {
       person: '어머니',
       name: '김은숙',
-      bank: 'SC제일은행',
-      account: '000-00-000000',
+      bank: '국민은행',
+      account: '467701-01-167003',
     },
   ],
 }
