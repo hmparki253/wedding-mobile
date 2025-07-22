@@ -6,7 +6,7 @@ const GNB = () => {
     <header className={styles.gnb}>
       <div className={styles.headerWrapper}>
         <div className={styles.logoWrapper}>
-          <div className={styles.headerDate}>2024 / 11 / 30 </div>
+          <div className={styles.headerDate}>2025 / 09 / 13 </div>
           <div className={styles.headerDay}>SATURDAY</div>
         </div>
         <NavBar />

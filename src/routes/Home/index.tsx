@@ -18,14 +18,14 @@ const Home = () => {
       <div className={styles.mainImage} />
       <div className={styles.bottomSheet}>
         <div className={styles.fadeIn} style={{ animationDelay: '100ms' }}>
-          신랑 <span className={styles.name}>최정회</span>{' '}
+          신랑 <span className={styles.name}>박현민</span>{' '}
           <span style={{ fontSize: '12px', marginLeft: '4px' }}>그리고</span> 신부{' '}
-          <span className={styles.name}>채은솔</span>
+          <span className={styles.name}>이수경</span>
         </div>
         <p className={styles.fadeIn} style={{ animationDelay: '300ms' }}>
-          2024. 11. 30 (토) 오전 11시 20분
+          2025. 09. 13 (토) 오후 2시 00분
           <br />
-          더링크호텔 3F 베일리홀
+          춘천 미래웨딩홀 1F 빌라드엠홀
         </p>
         <Button
           className={styles.fadeIn}

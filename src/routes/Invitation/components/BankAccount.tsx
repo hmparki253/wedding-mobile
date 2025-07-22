@@ -24,7 +24,7 @@ const accounts: Record<keyof typeof side, Account[]> = {
   groom: [
     {
       person: '신랑',
-      name: '최정회',
+      name: '박현민',
       bank: '우리은행',
       account: '1002-943-177128',
     },
@@ -38,7 +38,7 @@ const accounts: Record<keyof typeof side, Account[]> = {
   bride: [
     {
       person: '신부',
-      name: '채은솔',
+      name: '이수경',
       bank: '카카오뱅크',
       account: '3333-19-6862220',
     },

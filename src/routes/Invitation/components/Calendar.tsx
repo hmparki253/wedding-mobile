@@ -4,9 +4,9 @@ const Calendar = () => {
   return (
     <section className={styles.section}>
       <h2>DATE</h2>
-      <p className={styles.date}>2024. 11. 30. (토) 오전 11시 20분</p>
+      <p className={styles.date}>2025. 09. 13. (토) 오후 2시</p>
       <div className={styles.calendar}>
-        <div className={styles.month}>11월</div>
+        <div className={styles.month}>9월</div>
         <table>
           <tbody>
             <tr className={styles.dayOfWeek}>
@@ -19,15 +19,13 @@ const Calendar = () => {
               <th>토</th>
             </tr>
             <tr>
-              <td colSpan={5}>&nbsp;</td>
+              <td>&nbsp;</td>
               <td>
                 <span>1</span>
               </td>
               <td>
                 <span>2</span>
               </td>
-            </tr>
-            <tr>
               <td>
                 <span>3</span>
               </td>
@@ -40,6 +38,8 @@ const Calendar = () => {
               <td>
                 <span>6</span>
               </td>
+            </tr>
+            <tr>
               <td>
                 <span>7</span>
               </td>
@@ -49,8 +49,6 @@ const Calendar = () => {
               <td>
                 <span>9</span>
               </td>
-            </tr>
-            <tr>
               <td>
                 <span>10</span>
               </td>
@@ -60,9 +58,11 @@ const Calendar = () => {
               <td>
                 <span>12</span>
               </td>
-              <td>
+              <td className={styles.dday}>
                 <span>13</span>
               </td>
+            </tr>
+            <tr>
               <td>
                 <span>14</span>
               </td>
@@ -72,8 +72,6 @@ const Calendar = () => {
               <td>
                 <span>16</span>
               </td>
-            </tr>
-            <tr>
               <td>
                 <span>17</span>
               </td>
@@ -86,6 +84,8 @@ const Calendar = () => {
               <td>
                 <span>20</span>
               </td>
+            </tr>
+            <tr>
               <td>
                 <span>21</span>
               </td>
@@ -95,8 +95,6 @@ const Calendar = () => {
               <td>
                 <span>23</span>
               </td>
-            </tr>
-            <tr>
               <td>
                 <span>24</span>
               </td>
@@ -109,21 +107,17 @@ const Calendar = () => {
               <td>
                 <span>27</span>
               </td>
+            </tr>
+            <tr>
               <td>
                 <span>28</span>
               </td>
               <td>
                 <span>29</span>
               </td>
-              <td className={styles.dday}>
+              <td>
                 <span>30</span>
               </td>
-            </tr>
-            <tr>
-              <td>
-                <span>31</span>
-              </td>
-              <td colSpan={6}>&nbsp;</td>
             </tr>
           </tbody>
         </table>

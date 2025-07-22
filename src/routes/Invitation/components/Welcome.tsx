@@ -20,15 +20,15 @@ const Welcome = () => {
       <div className={styles.host}>
         <div>
           <div>
-            <span>최면석 · 김관희</span> 의 아들
+            <span>박주문 · 한영화</span> 의 아들
           </div>
-          <span>정회</span>
+          <span>현민</span>
         </div>
         <div>
           <div>
-            <span>채규칠 · 김은숙</span> 의 딸
+            <span>이창수 · 박경분</span> 의 딸
           </div>
-          <span>은솔</span>
+          <span>수경</span>
         </div>
       </div>
     </section>

@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import { Map, MapMarker } from 'react-kakao-maps-sdk'
 import styles from './location.module.scss'
-import ImageCarousel from 'components/ImageCarousel'
-import image1 from 'assets/images/baily_hall.jpg'
-import image2 from 'assets/images/lobby.jpeg'
-import image3 from 'assets/images/food.jpeg'
-import image4 from 'assets/images/food2.jpeg'
+// import ImageCarousel from 'components/ImageCarousel'
+// import image1 from 'assets/images/baily_hall.jpg'
+// import image2 from 'assets/images/lobby.jpeg'
+// import image3 from 'assets/images/food.jpeg'
+// import image4 from 'assets/images/food2.jpeg'
 import kakaoIcon from 'assets/icons/kakao_map.png'
 import naverIcon from 'assets/icons/naver_map.png'
 
 const addressText = [
   {
     title: '주소',
-    description: '서울특별시 구로구 경인로 610\n더링크호텔 3층 베일리홀',
+    description: '강원 춘천시 퇴계로 118',
   },
   {
     title: '오시는 길',
@@ -31,23 +31,23 @@ const Location = () => {
   return (
     <section>
       <h2>LOCATION</h2>
-      <ImageCarousel
+      {/* <ImageCarousel
         images={[image1, image2, image3, image4]}
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
         indicatorPosition='outer'
         intervalTime={4000}
         delay={800}
-      />
+      /> */}
       <h2>찾아오시는 길</h2>
       <Map
-        center={{ lat: 37.50545604606263, lng: 126.8839587981552 }} // 지도의 중심 좌표
+        center={{ lat: 37.8605717, lng: 127.7328071 }} // 지도의 중심 좌표
         style={{ width: '100%', height: '320px', marginTop: '1rem' }} // 지도 크기
-        level={3} // 지도 확대 레벨
+        level={5} // 지도 확대 레벨
       >
-        <MapMarker position={{ lat: 37.50545604606263, lng: 126.8839587981552 }} />
+        <MapMarker position={{ lat: 37.8605717, lng: 127.7328071 }} />
       </Map>
-      <h3 className={styles.location}>더링크호텔</h3>
+      <h3 className={styles.location}>미래컨벤션웨딩홀</h3>
       <div className={styles.address}>
         {addressText.map((text) => (
           <div key={text.title} className={styles.addressItem}>
@@ -56,18 +56,25 @@ const Location = () => {
           </div>
         ))}
         <div className={styles.mapIcons}>
-          <a href='https://map.naver.com/p/entry/place/1070501110?c=15.00,0,0,0,dh' target='_blank' rel='noreferrer'>
+          <a href='https://map.naver.com/p/entry/place/13336897?c=15.00,0,0,0,dh' target='_blank' rel='noreferrer'>
             <img src={naverIcon} alt='네이버 지도' />
           </a>
-          <a
-            href='https://map.kakao.com/?map_type=TYPE_MAP&itemId=801090941&urlLevel=3&urlX=474352&urlY=1112805&q=%EB%8D%94%EB%A7%81%ED%81%AC%ED%98%B8%ED%85%94'
-            target='_blank'
-            rel='noreferrer'
-          >
+          <a href='https://place.map.kakao.com/15874126' target='_blank' rel='noreferrer'>
             <img src={kakaoIcon} alt='카카오 지도' />
           </a>
         </div>
       </div>
+      <h2>대절버스 안내</h2>
+      <div className={styles.address}>
+        <p>멀리서 오시는 귀한 분들을 모시고자 버스를 대절하였습니다.</p>
+      </div>
+      <Map
+        center={{ lat: 37.5159236, lng: 126.9073819 }} // 지도의 중심 좌표
+        style={{ width: '100%', height: '320px', marginTop: '1rem' }} // 지도 크기
+        level={5} // 지도 확대 레벨
+      >
+        <MapMarker position={{ lat: 37.5159236, lng: 126.9073819 }} />
+      </Map>
     </section>
   )
 }
