@@ -4,18 +4,18 @@ import ImageGrid from 'components/ImageGrid'
 import ImageViewer from 'components/ImageViewer'
 import ImageCarousel from 'components/ImageCarousel'
 
-import image01 from 'assets/images/IMG_1-min.jpg'
+import image01 from 'assets/images/new-IMG_1-min.jpg'
 import image02 from 'assets/images/IMG_2-min.jpg'
-import image03 from 'assets/images/IMG_3-min.jpg'
-import image04 from 'assets/images/IMG_4-min.jpg'
-import image05 from 'assets/images/IMG_5-min.jpg'
-import image06 from 'assets/images/IMG_6-min.jpg'
-import image07 from 'assets/images/IMG_7-min.jpg'
-import image08 from 'assets/images/IMG_8-min.jpg'
-import image09 from 'assets/images/IMG_9-min.jpg'
-import image10 from 'assets/images/IMG_10-min.jpg'
-import image11 from 'assets/images/IMG_11-min.jpg'
-import image12 from 'assets/images/IMG_12-min.jpg'
+import image03 from 'assets/images/new-IMG_2-min.jpg' // 뒤쪽으로 밀어 -> 다른걸로 바꿔 | 8426
+import image04 from 'assets/images/new-IMG_4-min.jpg' // 8338 -> 보정본 있나 확인
+import image05 from 'assets/images/new-IMG_5-min.jpg' // 9164-1
+import image06 from 'assets/images/new-IMG_6-min.jpg' // 9199
+import image07 from 'assets/images/new-IMG_8-min.jpg' // 9067을 흑백으로 넣어
+import image08 from 'assets/images/new-IMG_7-min.jpg' // IMG-4 를 여기에 위치시켜
+import image09 from 'assets/images/new-IMG_9-min.jpg' // 9522
+import image10 from 'assets/images/new-IMG_10-min.jpg' // 9583
+import image11 from 'assets/images/new-IMG_11-min.jpg' // 9901
+import image12 from 'assets/images/new-IMG_12-min.jpg' // 9999 - 보정본 있는것으로 교체
 
 const imageList = [
   image01,
