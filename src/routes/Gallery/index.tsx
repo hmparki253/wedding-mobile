@@ -11,11 +11,13 @@ import image04 from 'assets/images/new-IMG_4-min.jpg' // 8338 -> 보정본 있�
 import image05 from 'assets/images/new-IMG_5-min.jpg' // 9164-1
 import image06 from 'assets/images/new-IMG_6-min.jpg' // 9199
 import image07 from 'assets/images/newnew-IMG_8-min.jpg' // 9067을 흑백으로 넣어
-import image08 from 'assets/images/IMG_4-min.jpg' // IMG-4 를 여기에 위치시켜
+import image08 from 'assets/images/new-IMG_44-min.jpg' // IMG-4 를 여기에 위치시켜
 import image09 from 'assets/images/new-IMG_9-min.jpg' // 9522
 import image10 from 'assets/images/new-IMG_10-min.jpg' // 9583
 import image11 from 'assets/images/new-IMG_11-min.jpg' // 9901
 import image12 from 'assets/images/new-IMG_12-min.jpg' // 9999 - 보정본 있는것으로 교체
+import image13 from 'assets/images/new-IMG_8-min.jpg'
+import image14 from 'assets/images/new-IMG_14-min.jpg'
 
 const imageList = [
   image01,
@@ -26,6 +28,8 @@ const imageList = [
   image06,
   image07,
   image08,
+  image13,
+  image14,
   image09,
   image10,
   image11,
