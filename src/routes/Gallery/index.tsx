@@ -4,9 +4,9 @@ import ImageGrid from 'components/ImageGrid'
 import ImageViewer from 'components/ImageViewer'
 import ImageCarousel from 'components/ImageCarousel'
 
-import image01 from 'assets/images/new-IMG_1-min.jpg'
+import image01 from 'assets/images/new-IMG_1.jpg'
 import image02 from 'assets/images/IMG_2-min.jpg'
-import image03 from 'assets/images/new-IMG_2-min.jpg' // 뒤쪽으로 밀어 -> 다른걸로 바꿔 | 8426
+import image03 from 'assets/images/new-IMG_2.jpg' // 뒤쪽으로 밀어 -> 다른걸로 바꿔 | 8426
 import image04 from 'assets/images/new-IMG_4-min.jpg' // 8338 -> 보정본 있나 확인
 import image05 from 'assets/images/new-IMG_5-min.jpg' // 9164-1
 import image06 from 'assets/images/new-IMG_6-min.jpg' // 9199
