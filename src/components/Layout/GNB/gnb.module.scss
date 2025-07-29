@@ -21,7 +21,7 @@
   height: 100px;
 
   div {
-    font-family: 'Gamja Flower';
+    // font-family: 'Gamja Flower';
     font-weight: 500;
     color: colors.$GRAY3;
   }
@@ -31,14 +31,14 @@
   }
   .headerDay {
     margin-top: 8px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 }
 
 .navBar {
   ul {
-    font-family: 'Hi Melody';
+    // font-family: 'Hi Melody';
     display: flex;
     align-items: center;
     justify-content: center;

@@ -24,8 +24,8 @@ const navList: INavItem[] = [
     title: '사진첩',
   },
   {
-    to: 'message',
-    title: '방명록',
+    to: 'bus',
+    title: '대절버스',
   },
 ]
 

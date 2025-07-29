@@ -6,6 +6,7 @@ import Gallery from './Gallery'
 import Home from './Home'
 import Invitation from './Invitation'
 import Message from './Message'
+import Bus from './Bus'
 
 initializeGTM()
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='invitation' element={<Invitation />} />
         <Route path='gallery' element={<Gallery />} />
         <Route path='message' element={<Message />} />
+        <Route path='bus' element={<Bus />} />
       </Route>
       <Route path='*' element={<div>404</div>} />
     </Routes>
