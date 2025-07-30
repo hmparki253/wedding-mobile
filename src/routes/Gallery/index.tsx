@@ -3,6 +3,7 @@ import { useModal } from 'hooks/useModal'
 import ImageGrid from 'components/ImageGrid'
 import ImageViewer from 'components/ImageViewer'
 import ImageCarousel from 'components/ImageCarousel'
+import styles from './gallery.module.scss'
 
 import image01 from 'assets/images/new-IMG_1.jpg'
 import image02 from 'assets/images/IMG_2-min.jpg'
@@ -47,8 +48,10 @@ const Gallery = () => {
   }
 
   return (
-    <section>
-      <h2>GALLERY</h2>
+    <section className={styles.gallerySection}>
+      <div className={styles.header}>
+        <h2>GALLERY</h2>
+      </div>
       <ImageGrid imageList={imageList} handleImageClick={handleImageClick} />
       {isModalOpen && (
         <ImageViewer

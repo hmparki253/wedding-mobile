@@ -2,33 +2,36 @@ import styles from './welcome.module.scss'
 
 const Welcome = () => {
   return (
-    <section className={styles.welcome}>
-      <h2>INVITATION</h2>
-      <p>
-        서로가 마주보며 다져온 사랑을
-        <br />
-        이제 함께 한 곳을 바라보며 걸어갈 수 있는
-        <br />
-        큰 사랑으로 키우고자 합니다.
-        <br />
-        저희 두 사람이
-        <br />
-        사랑이 가득한 가정을 이룰 수 있게
-        <br />
-        앞날을 축복해 주시면 감사하겠습니다.
-      </p>
-      <div className={styles.host}>
-        <div>
-          <div>
+    <section className={styles.welcomeSection}>
+      <div className={styles.header}>
+        <h2>INVITATION</h2>
+      </div>
+      <div className={styles.messageCard}>
+        <p className={styles.message}>
+          서로의 곁에서
+          <br />
+          소중한 순간들을 함께해 온 저희 두 사람이,
+          <br />
+          이제 하나의 미래를 함께 그려가려 합니다.
+          <br />
+          따뜻한 축복으로 함께해 주신다면
+          <br />
+          진심으로 감사드리겠습니다.
+        </p>
+      </div>
+
+      <div className={styles.hostInfo}>
+        <div className={styles.hostCard}>
+          <div className={styles.hostParents}>
             <span>박주문 · 한영화</span> 의 아들
           </div>
-          <span>현민</span>
+          <div className={styles.hostName}>현민</div>
         </div>
-        <div>
-          <div>
+        <div className={styles.hostCard}>
+          <div className={styles.hostParents}>
             <span>이창수 · 박경분</span> 의 딸
           </div>
-          <span>수경</span>
+          <div className={styles.hostName}>수경</div>
         </div>
       </div>
     </section>

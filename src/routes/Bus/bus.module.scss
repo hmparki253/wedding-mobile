@@ -1,5 +1,184 @@
 @use '/src/styles/constants/colors';
 
+.busSection {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: colors.$GRAY3;
+    line-height: 1.4;
+  }
+}
+
+.routeTabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.routeTab {
+  flex: 1;
+  padding: 16px 12px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  .tabTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: colors.$GRAY3;
+    margin-bottom: 4px;
+  }
+
+  .tabSubtitle {
+    font-size: 12px;
+    color: colors.$GRAY5;
+  }
+
+  &.active {
+    background: colors.$PRIMARY;
+
+    .tabTitle {
+      color: white;
+    }
+
+    .tabSubtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &:hover:not(.active) {
+    background: #f8f9fa;
+  }
+}
+
+.routeInfo {
+  margin-bottom: 30px;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.timeInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .timeLabel {
+    font-size: 14px;
+    color: colors.$GRAY3;
+    font-weight: 500;
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: 700;
+    color: colors.$PRIMARY;
+  }
+}
+
+.locationInfo {
+  .locationLabel {
+    display: block;
+    font-size: 14px;
+    color: colors.$GRAY3;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .locationDetail {
+    .locationName {
+      font-size: 16px;
+      font-weight: 600;
+      color: colors.$GRAY1;
+      margin-bottom: 4px;
+    }
+
+    .locationDesc {
+      font-size: 14px;
+      color: colors.$GRAY5;
+    }
+  }
+}
+
+.mapContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.notice {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.noticeItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: colors.$GRAY3;
+  line-height: 1.4;
+
+  + .noticeItem {
+    margin-top: 8px;
+  }
+}
+
+.applicationSection {
+  text-align: center;
+}
+
+.applicationButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, colors.$PRIMARY, #ff6b9d);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(colors.$PRIMARY, 0.3);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(colors.$PRIMARY, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// 기존 스타일 유지 (하위 호환성)
 .location {
   margin-top: 20px;
   font-size: 18px;
@@ -15,7 +194,6 @@
 }
 
 .address {
-//   font-family: 'Gamja Flower';
   padding: 20px 0;
   line-height: 1.5;
   color: colors.$GRAY1;

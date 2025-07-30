@@ -1,5 +1,67 @@
 @use '/src/styles/constants/colors';
 
+.welcomeSection {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    letter-spacing: 2px;
+  }
+}
+
+.messageCard {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+
+  .message {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: colors.$GRAY1;
+    text-align: center;
+  }
+}
+
+.hostInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hostCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .hostParents {
+    font-size: 14px;
+    color: colors.$GRAY3;
+
+    span {
+      font-weight: 600;
+      color: colors.$GRAY1;
+    }
+  }
+
+  .hostName {
+    font-size: 18px;
+    font-weight: 700;
+    color: colors.$PRIMARY;
+  }
+}
+
+// 기존 스타일 유지 (하위 호환성)
 .welcome {
   p {
     font-size: 16px;

@@ -2,12 +2,21 @@ import styles from './calendar.module.scss'
 
 const Calendar = () => {
   return (
-    <section className={styles.section}>
-      <h2>DATE</h2>
-      <p className={styles.date}>2025. 09. 13. (토) 오후 2시</p>
-      <div className={styles.calendar}>
+    <section className={styles.calendarSection}>
+      <div className={styles.header}>
+        <h2>DATE</h2>
+      </div>
+
+      <div className={styles.dateCard}>
+        <div className={styles.dateInfo}>
+          <div className={styles.mainDate}>2025. 09. 13. (토)</div>
+          <div className={styles.time}>오후 2시</div>
+        </div>
+      </div>
+
+      <div className={styles.calendarCard}>
         <div className={styles.month}>9월</div>
-        <table>
+        <table className={styles.calendarTable}>
           <tbody>
             <tr className={styles.dayOfWeek}>
               <th>일</th>
@@ -118,6 +127,10 @@ const Calendar = () => {
               <td>
                 <span>30</span>
               </td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
             </tr>
           </tbody>
         </table>

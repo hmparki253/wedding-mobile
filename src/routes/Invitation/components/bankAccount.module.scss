@@ -1,5 +1,101 @@
 @use '/src/styles/constants/colors';
 
+.bankSection {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: colors.$GRAY3;
+    line-height: 1.4;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  button {
+    border-radius: 12px !important;
+    padding: 16px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+}
+
+.accountList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accountCard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #f0f0f0;
+  }
+}
+
+.accountInfo {
+  flex: 1;
+  text-align: left;
+
+  .personInfo {
+    margin-bottom: 4px;
+
+    .person {
+      font-size: 14px;
+      color: colors.$GRAY3;
+      margin-right: 8px;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: 600;
+      color: colors.$GRAY1;
+    }
+  }
+
+  .bankInfo {
+    font-size: 14px;
+    color: colors.$GRAY3;
+    font-family: monospace;
+  }
+}
+
+.copyButton {
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: colors.$PRIMARY;
+  }
+}
+
+// 기존 스타일 유지 (하위 호환성)
 .buttonWrapper {
   display: flex;
   gap: 16px;

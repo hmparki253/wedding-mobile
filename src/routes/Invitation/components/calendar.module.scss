@@ -1,5 +1,104 @@
 @use '/src/styles/constants/colors';
 
+.calendarSection {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    letter-spacing: 2px;
+  }
+}
+
+.dateCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  // box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  .dateInfo {
+    .mainDate {
+      font-size: 20px;
+      font-weight: 700;
+      color: colors.$GRAY1;
+      margin-bottom: 8px;
+    }
+
+    .time {
+      font-size: 16px;
+      color: colors.$PRIMARY;
+      font-weight: 600;
+    }
+  }
+}
+
+.calendarCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  .month {
+    font-size: 18px;
+    font-weight: 700;
+    color: colors.$GRAY1;
+    margin-bottom: 16px;
+  }
+
+  .calendarTable {
+    width: 100%;
+    margin: 0 auto;
+
+    .dayOfWeek {
+      color: colors.$GRAY3;
+      font-weight: 600;
+
+      th {
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+
+    td {
+      padding: 12px 8px;
+      text-align: center;
+      position: relative;
+
+      span {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+        font-size: 14px;
+        color: colors.$GRAY1;
+        transition: all 0.2s ease;
+      }
+
+      &.dday {
+        span {
+          background: linear-gradient(135deg, colors.$PRIMARY, #ff6b9d);
+          color: white;
+          font-weight: 700;
+          transform: scale(1.1);
+          box-shadow: 0 2px 8px rgba(colors.$PRIMARY, 0.3);
+        }
+      }
+
+      &:not(.dday):hover span {
+        background: #f0f0f0;
+      }
+    }
+  }
+}
+
+// 기존 스타일 유지 (하위 호환성)
 .section {
   padding: 14px 35px 35px;
   background-color: #f4f4f4;
