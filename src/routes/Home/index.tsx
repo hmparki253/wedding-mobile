@@ -25,7 +25,7 @@ const Home = () => {
         <p className={styles.fadeIn} style={{ animationDelay: '300ms' }}>
           2025. 09. 13 (토) 오후 2시 00분
           <br />
-          춘천 미래웨딩홀 1F 빌라드엠홀
+          춘천 미래컨벤션웨딩홀 1F 빌라드엠홀
         </p>
         <Button
           className={styles.fadeIn}
