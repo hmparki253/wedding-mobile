@@ -97,6 +97,7 @@ const Bus = () => {
       <div className={styles.notice}>
         <div className={styles.noticeItem}>⏰ 출발 10분 전까지 탑승장소에 도착해주세요</div>
         <div className={styles.noticeItem}>📱 탑승 신청은 필수입니다</div>
+        <div className={styles.noticeItem}>🗓️ 탑승 신청은 9월 6일 자정까지만 받습니다</div>
         <div className={styles.noticeItem}>📞 기사님 연락처: 010-3339-9929 (이상정 기사님)</div>
         <div className={styles.noticeItem}>🚌 차량번호: 경기76자3250</div>
       </div>
