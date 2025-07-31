@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { MouseEvent, useState } from 'react'
 import { Map, MapMarker } from 'react-kakao-maps-sdk'
+import Button from 'components/Button'
+import { ReactComponent as CheckIcon } from 'assets/icons/check.svg'
 import styles from './location.module.scss'
 import kakaoIcon from 'assets/icons/kakao_map.png'
 import naverIcon from 'assets/icons/naver_map.png'
+import tmapIcon from 'assets/icons/tmap.jpg'
 
 const addressInfo = [
   {
@@ -41,7 +44,17 @@ const addressInfo = [
 
 const Location = () => {
   const [_currentIndex, _setCurrentIndex] = useState(0)
+  const [copiedAddress, setCopiedAddress] = useState(false)
 
+  const handleCopy = (e: MouseEvent<HTMLButtonElement>) => {
+    const { value } = e.target as HTMLButtonElement
+    navigator.clipboard.writeText(value)
+    setCopiedAddress(true)
+    // 2초 후 복사 상태 초기화
+    setTimeout(() => {
+      setCopiedAddress(false)
+    }, 2000)
+  }
   return (
     <section className={styles.locationSection}>
       <div className={styles.header}>
@@ -63,11 +76,27 @@ const Location = () => {
 
       {/* 주소 정보 */}
       <div className={styles.addressInfo}>
-        {addressInfo.map((info) => (
+        {addressInfo.map((info, index) => (
           <div key={info.title} className={styles.infoCard}>
             <div className={styles.infoHeader}>
               <span className={styles.infoIcon}>{info.icon}</span>
               <span className={styles.infoTitle}>{info.title}</span>
+              {/* 첫 번째 항목(주소)에만 복사 버튼 추가 */}
+              {index === 0 && (
+                <div className={styles.copyButton}>
+                  {copiedAddress ? (
+                    <CheckIcon />
+                  ) : (
+                    <Button
+                      text='복사'
+                      value={info.description}
+                      size='small'
+                      buttonStyle='ghost'
+                      onClick={handleCopy}
+                    />
+                  )}
+                </div>
+              )}
             </div>
             <p className={styles.infoDescription}>{info.description}</p>
           </div>
@@ -88,6 +117,10 @@ const Location = () => {
         <a href='https://place.map.kakao.com/15874126' target='_blank' rel='noreferrer' className={styles.mapLink}>
           <img src={kakaoIcon} alt='카카오 지도' />
           <span>카카오 지도</span>
+        </a>
+        <a href='https://tmap.life/fc9a786a' target='_blank' rel='noreferrer' className={styles.mapLink}>
+          <img src={tmapIcon} alt='티맵' />
+          <span>T MAP</span>
         </a>
       </div>
     </section>
